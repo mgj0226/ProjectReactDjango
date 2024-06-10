@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'musicApi.apps.MusicapiConfig',
+    'frontend.apps.FrontendConfig',
     'rest_framework',
 ]
 
