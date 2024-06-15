@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import HomePage from './HomePage';
 
 export default class App extends Component {
     constructor(props) {
@@ -18,7 +19,8 @@ export default class App extends Component {
     render() {
         return (
             <div>
-                <h1>Testing React Code</h1>
+                <h1>{this.props.name}</h1>
+                <HomePage />
                 {/* <ul>
                     {this.state.data.map(data => (
                         <li key={data.id}>{data.name}</li>
@@ -30,4 +32,4 @@ export default class App extends Component {
 }
 
 const appDiv = document.getElementById('app');
-render(<App />, appDiv);
+render(<App name="Michael's"/>, appDiv);
