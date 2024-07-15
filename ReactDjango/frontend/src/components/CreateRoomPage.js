@@ -14,6 +14,10 @@ export default class CreateRoomPage extends Component {
     defaultVotes = 2;
     constructor(props) {
         super(props);
+        this.state = {
+            guestCanPause: true,
+            votesToSkip: this.defaultVotes,
+        };
     }
 
     render() {
